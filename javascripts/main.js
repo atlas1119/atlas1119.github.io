@@ -1,1 +1,5 @@
-console.log('This would be the main JS file.');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+
+ReactDOM.render(<App/>, document.getElementById('app'));
