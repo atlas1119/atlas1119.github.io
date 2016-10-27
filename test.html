@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>text page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="atlas : 个人技术博客">
-    <link rel="stylesheet" type="text/css" media="screen" href="dist/stylesheets/stylesheet.css">
-    <title>atlas1111个人技术乐园</title>
-  </head>
+    <link href="javascripts/map/jslib/atlas.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>武汉市矢量地图展示</div>
+	<div id="map" style="width: 900px; height: 600px; border: 1px solid #ccc"></div>
 
-  <body>
-    <div id="app">我的测试项目</div>
-  </body>
+    <script src="javascripts/map/jslib/Global.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/util/Util.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/Class.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/Bounds.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/Browser.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/BaseTypes/LatLng.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/LatLngBounds.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/Point.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/Handler.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/BaseTypes/Label.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/LineUtil.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/BaseTypes/PolyUtil.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/Events.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/util/DomUtil.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/util/MouseEventUtil.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/util/DraggableUtil.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/util/TransformationUtil.js" type="text/javascript"></script>
+    <script type="text/javascript" src="javascripts/map/jslib/util/Ajax.js"></script>
+
+    <script src="javascripts/map/jslib/crs/CRS.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/crs/ProjectionLatLng.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/crs/ProjectionSphericalMercator.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/crs/CRSEPSG3857.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/Map.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/map/MapDrag.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/map/ScrollZoom.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/vectorlayer/PathCanvas.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/vectorlayer/PointsCanvas.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/vectorlayer/PolylineCanvas.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/vectorlayer/PolygonCanvas.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/vectorlayer/RectangleCanvas.js" type="text/javascript"></script>
+
+    <script src="javascripts/map/jslib/vectorlayer/draw/DrawShape.js" type="text/javascript"></script>
+    <script src="javascripts/map/jslib/vectorlayer/draw/DrawRectangle.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript" src="javascripts/map/jslib/control/Control.js"></script>
+    <script type="text/javascript" src="javascripts/map/jslib/control/ZoomControl.js"></script>
+    <script type="text/javascript" src="javascripts/map/jslib/control/LayersControl.js"></script>
+    <script type="text/javascript" src="javascripts/map/jslib/control/SelectToolBar.js"></script>
+
+
+    <script type="text/javascript" src="javascripts/map/jslib/CanvasMain.js"></script>
+	<script type="text/javascript">
+
+	    new Atlas.CanvasMain().initMap("map");
+
+	</script>
+</body>
 </html>

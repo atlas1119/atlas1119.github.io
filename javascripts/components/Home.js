@@ -29,6 +29,11 @@ export default class Home extends React.Component{
                         <br/>欢迎大家一起来体验ES6，ES7吧
                     </h2>
                 </div>
+                <div id="footer_wrap" className="outer">
+                    <footer className="inner">
+                        <p style={{textAlign:'center'}}>{'作者：汪少俊'}<br/>{'联系方式：wsj.atlas1119@gmail.com'}</p>
+                    </footer>
+                </div>
             </div>
         );
     }
