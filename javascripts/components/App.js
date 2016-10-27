@@ -42,7 +42,8 @@ export default class App extends React.Component{
     constructor(props, context){
         super(props, context);
         this.state={
-            open:false
+            open:false,
+            title:"欢迎来到Atlas技术乐园"
         };
     }
     componentDidMount(){
@@ -57,7 +58,7 @@ export default class App extends React.Component{
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div>
                     <AppBar
-                        title="欢迎来到Atlas技术乐园"
+                        title={this.state.title}
                         onLeftIconButtonTouchTap={()=>{
                             this.handleToggle();
                         }}
@@ -73,7 +74,7 @@ export default class App extends React.Component{
                             iconElementLeft={<IconButton><ActionHome /></IconButton>}
                             onTitleTouchTap={()=>{
                                 window.location.href = '#/';
-                                this.setState({open:false});
+                                this.setState({open:false,title:"欢迎来到Atlas技术乐园"});
                             }}
                             style={{boxShadow:'none'}}/>
                         <Divider />
@@ -83,27 +84,27 @@ export default class App extends React.Component{
                                 leftIcon={<Highlight />}
                                 onTouchTap={()=>{
                                     window.location.href="#/works";
-                                    this.setState({open:false});
+                                    this.setState({open:false,title:"作品展示"});
                                 }}/>
                             <MenuItem
                                 primaryText="关于我"
                                 leftIcon={<Person />}
                                 onTouchTap={()=>{
                                     window.location.href="#/about";
-                                    this.setState({open:false});
+                                    this.setState({open:false,title:"关于我"});
                                 }}/>
                             <MenuItem
                                 primaryText="技术分享"
                                 leftIcon={<Poll />}
                                 onTouchTap={()=>{
                                     window.location.href="#/tech";
-                                    this.setState({open:false});
+                                    this.setState({open:false,title:"技术分享"});
                                 }}/>
                             <Divider />
                             <MenuItem
                                 primaryText="联系我" leftIcon={<Phonelink />} onTouchTap={()=>{
                                     window.location.href="#/contact";
-                                    this.setState({open:false});
+                                    this.setState({open:false,title:"联系我"});
                             }}/>
                         </Menu>
                     </Drawer>
