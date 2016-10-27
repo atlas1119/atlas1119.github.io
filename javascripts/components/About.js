@@ -1,15 +1,15 @@
 import React from 'react';
 
-export default class Works extends React.Component{
+export default class About extends React.Component{
 
     componentDidMount(){
-        
+
     }
 
     render(){
         return (
             <div className="nav-top">
-                Works
+                About
             </div>
         );
     }
