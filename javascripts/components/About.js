@@ -9,7 +9,7 @@ export default class About extends React.Component{
     render(){
         return (
             <div className="nav-top">
-                About
+                关于我部分，稍后添加。。。
             </div>
         );
     }

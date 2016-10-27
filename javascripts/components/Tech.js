@@ -9,7 +9,7 @@ export default class Tech extends React.Component{
     render(){
         return (
             <div className="nav-top">
-                Tech
+                这块会不断更新，正在想办法，如何自动更新。。。
             </div>
         );
     }

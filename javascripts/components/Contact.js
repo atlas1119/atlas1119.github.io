@@ -9,7 +9,7 @@ export default class Contact extends React.Component{
     render(){
         return (
             <div className="nav-top">
-                Contact
+                手机号：16800466042
             </div>
         );
     }
