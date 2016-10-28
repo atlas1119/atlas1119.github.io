@@ -43,7 +43,8 @@ export default class App extends React.Component{
         super(props, context);
         this.state={
             open:false,
-            title:"欢迎来到Atlas技术乐园"
+            title:"欢迎来到Atlas技术乐园",
+            boxShadow: 'none'
         };
     }
     componentDidMount(){
@@ -67,14 +68,14 @@ export default class App extends React.Component{
                           secondary={true}
                           icon={<FontIcon className="muidocs-icon-custom-github" />}
                         />}
-                        style={{boxShadow:'none',position:'fixed',top:0}}/>
+                        style={{boxShadow:this.state.boxShadow,position:'fixed',top:0}}/>
                     <Drawer docked={false} open={this.state.open} onRequestChange={(open) => this.setState({open})}>
                         <AppBar
                             title={<div style={{cursor: 'pointer'}}>首页</div>}
                             iconElementLeft={<IconButton><ActionHome /></IconButton>}
                             onTitleTouchTap={()=>{
                                 window.location.href = '#/';
-                                this.setState({open:false,title:"欢迎来到Atlas技术乐园"});
+                                this.setState({open:false,title:"欢迎来到Atlas技术乐园",boxShadow:'none'});
                             }}
                             style={{boxShadow:'none'}}/>
                         <Divider />
@@ -84,27 +85,27 @@ export default class App extends React.Component{
                                 leftIcon={<Highlight />}
                                 onTouchTap={()=>{
                                     window.location.href="#/works";
-                                    this.setState({open:false,title:"作品展示"});
+                                    this.setState({open:false,title:"作品展示",boxShadow:'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'});
                                 }}/>
                             <MenuItem
                                 primaryText="关于我"
                                 leftIcon={<Person />}
                                 onTouchTap={()=>{
                                     window.location.href="#/about";
-                                    this.setState({open:false,title:"关于我"});
+                                    this.setState({open:false,title:"关于我",boxShadow:'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'});
                                 }}/>
                             <MenuItem
                                 primaryText="技术分享"
                                 leftIcon={<Poll />}
                                 onTouchTap={()=>{
                                     window.location.href="#/tech";
-                                    this.setState({open:false,title:"技术分享"});
+                                    this.setState({open:false,title:"技术分享",boxShadow:'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'});
                                 }}/>
                             <Divider />
                             <MenuItem
                                 primaryText="联系我" leftIcon={<Phonelink />} onTouchTap={()=>{
                                     window.location.href="#/contact";
-                                    this.setState({open:false,title:"联系我"});
+                                    this.setState({open:false,title:"联系我",boxShadow:'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'});
                             }}/>
                         </Menu>
                     </Drawer>

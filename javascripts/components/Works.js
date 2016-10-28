@@ -27,7 +27,7 @@ export default class Works extends React.Component{
 
     render(){
         return (
-            <div className="nav-top" style={{padding:'0px 50px',paddingBottom:"40px"}}>
+            <div className="nav-top">
                <Card>
                    <CardHeader
                      title="canvas地图展示"

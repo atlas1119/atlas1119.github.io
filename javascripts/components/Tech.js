@@ -3,7 +3,7 @@ import React from 'react';
 export default class Tech extends React.Component{
 
     componentDidMount(){
-
+        
     }
 
     render(){
