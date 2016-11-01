@@ -2,7 +2,7 @@ import React from 'react';
 import showdown from 'showdown';
 import axios from 'axios';
 
-var converter = new showdown.Converter({tables:true,simplifiedAutoLink:true,strikethrough:true});
+var converter = new showdown.Converter({tables:true,simplifiedAutoLink:true,strikethrough:true,parseImgDimensions:true});
 
 export default class Tech extends React.Component{
     constructor(props, context){

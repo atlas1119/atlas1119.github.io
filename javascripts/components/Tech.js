@@ -56,7 +56,7 @@ export default class Tech extends React.Component{
                 <SelectableList defaultValue={1}>
                     <Subheader>技术文章分享</Subheader>
                     <ListItem
-                      primaryText="IOS波纹动画实现方法————react native"
+                      primaryText="IOS波纹动画实现方法---react native"
                       secondaryText="2016-10-10"
                       value={"#/detail/wave"}
                     />
