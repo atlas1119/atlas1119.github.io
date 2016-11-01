@@ -96,11 +96,11 @@ export default class App extends React.Component{
                                     this.setState({open:false,title:"关于我",boxShadow:'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'});
                                 }}/>
                             <MenuItem
-                                primaryText="技术分享"
+                                primaryText="技术心得"
                                 leftIcon={<Poll />}
                                 onTouchTap={()=>{
                                     window.location.href="#/tech";
-                                    this.setState({open:false,title:"技术分享",boxShadow:'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'});
+                                    this.setState({open:false,title:"技术心得",boxShadow:'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'});
                                 }}/>
                             <Divider />
                             <MenuItem
