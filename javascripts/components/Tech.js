@@ -61,7 +61,12 @@ export default class Tech extends React.Component{
                       value={"#/detail/wave"}
                     />
                     <Divider/>
-                    
+                    <ListItem
+                      primaryText="react native开发ios心得"
+                      secondaryText="2016-10-20"
+                      value={"#/detail/rn_share"}
+                    />
+                    <Divider/>
               </SelectableList>
             </div>
         );
