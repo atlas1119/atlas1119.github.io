@@ -16,3 +16,6 @@ react native navigation 是个不错的第三方插件，但是之前遇到一�
            self.navigationController.interactivePopGestureRecognizer.enabled = interactivePopGesture ? [interactivePopGesture boolValue] : YES;
          }
        }
+
+
+redux状态操作让我觉的这个东西很爽，使得没有关联的两个组件之间可以通信了
