@@ -26,6 +26,7 @@ import Works from './Works';
 import About from './About';
 import Contact from './Contact';
 import Tech from './Tech';
+import Detail from './Detail';
 
 require("react-tap-event-plugin")();
 
@@ -114,6 +115,7 @@ export default class App extends React.Component{
                         <Route path="/about" component={About}/>
                         <Route path="/works" component={Works}/>
                         <Route path="/tech" component={Tech}/>
+                        <Route path="/detail/:id" component={Detail}/>
                         <Route path="/contact" component={Contact}/>
                     </Router>
                 </div>
