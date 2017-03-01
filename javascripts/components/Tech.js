@@ -73,6 +73,18 @@ export default class Tech extends React.Component{
                       value={"#/detail/koa"}
                     />
                     <Divider/>
+                    <ListItem
+                      primaryText="mongo心得"
+                      secondaryText="2016-11-2"
+                      value={"#/detail/mongo"}
+                    />
+                    <Divider/>
+                    <ListItem
+                      primaryText="co实现原理"
+                      secondaryText="2017-02-20"
+                      value={"#/detail/co"}
+                    />
+                    <Divider/>
               </SelectableList>
             </div>
         );
