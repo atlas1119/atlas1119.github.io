@@ -85,6 +85,12 @@ export default class Tech extends React.Component{
                       value={"#/detail/co"}
                     />
                     <Divider/>
+                    <ListItem
+                      primaryText="nodejs模块加载机制"
+                      secondaryText="2018-03-19"
+                      value={"#/detail/node_require"}
+                    />
+                    <Divider/>
               </SelectableList>
             </div>
         );
