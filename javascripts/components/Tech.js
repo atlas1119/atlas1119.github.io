@@ -91,6 +91,12 @@ export default class Tech extends React.Component{
                       value={"#/detail/node_require"}
                     />
                     <Divider/>
+                    <ListItem
+                      primaryText="flutter"
+                      secondaryText="2019-03-06"
+                      value={"#/detail/flutter_learn"}
+                    />
+                    <Divider/>
               </SelectableList>
             </div>
         );
